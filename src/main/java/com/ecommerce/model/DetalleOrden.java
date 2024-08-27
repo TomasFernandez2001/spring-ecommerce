@@ -83,6 +83,14 @@ public class DetalleOrden {
 	public void setTotal(double total) {
 		this.total = total;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "DetalleOrden [id=" + id + ", nombre=" + nombre + ", cantidad=" + cantidad + ", precio=" + precio
+				+ ", total=" + total + "]";
+	}
 	
 	
 	

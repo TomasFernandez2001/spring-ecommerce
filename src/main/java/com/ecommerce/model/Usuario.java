@@ -34,6 +34,21 @@ public class Usuario {
 		super();
 	}
 	
+	
+	public Usuario(int id, String nombre, String username, String email, String direccion, String telefono, String tipo,
+			String password) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.username = username;
+		this.email = email;
+		this.direccion = direccion;
+		this.telefono = telefono;
+		this.tipo = tipo;
+		this.password = password;
+	}
+
+
 	public Usuario(int id, String nombre, String username, String email, String direccion, String telefono, String tipo,
 			String password, List<Producto> productos) {
 		super();

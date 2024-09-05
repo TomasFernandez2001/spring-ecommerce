@@ -47,6 +47,7 @@
             </div>
             <div class="col-lg-6">
               <form th:action="@{/cart}" method="POST">
+				 <input type="hidden" th:value="${producto.id}" name="id">
                 <h2 class="card-title" th:text = "${producto.nombre}"></h2>
 
                 <ul class="list-group">
@@ -76,7 +77,6 @@
 	   
 	<div th:include="usuario/template_usuario.html::footer"></div>
       <!-- /.container -->
-    </footer>
 
 	<!-- Bootstrap core JavaScript -->
 		   <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
